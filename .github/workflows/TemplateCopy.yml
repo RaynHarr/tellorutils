@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: node TellorMonitors/01_addTip.js network reqId
+    - run: node TellorMonitors/01_addTip.js rinkeby reqId
 
       env:
         ETH_PK: ${{ secrets.ETH_PK }}
